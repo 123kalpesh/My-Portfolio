@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mr Kalpesh Desale - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#internship" class="nav-link">Internship</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-aurora"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="hero-title-line">Hi, I'm <span class="hero-title-gradient">Kalpesh Desale</span></span>
+                </h1>
+                <h2 class="hero-subtitle">Frontend Developer, Backend Developer & AI/ML Developer</h2>
+                <p class="hero-description">
+                    I build intelligent systems, scalable backends, and create AI-powered solutions that solve real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <svg class="tech-orb" viewBox="0 0 100 100" xmlns="">
+                        <defs>
+                            
+                            <linearGradient id="orb-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--primary); stop-opacity:1" />
+                                <div class="about-image">
+                                    <img src="/templates/kalpeshpic.jpg" alt="A photo of Kalpesh Desale" class="profile-photo">
+                                </div>
+                                <stop offset="100%" style="stop-color:var(--secondary); stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="orb-glow" cx="50" cy="50" r="45"/>
+                        <path class="orb-path" d="M 20,50 A 30,30 0 1,1 80,50" stroke="url(#orb-gradient)" fill="none" stroke-width="2" />
+                        <path class="orb-path" d="M 25,50 A 25,25 0 1,0 75,50" stroke="url(#orb-gradient)" fill="none" stroke-width="2" />
+                        <path class="orb-path" d="M 30,50 A 20,20 0 0,1 70,50" stroke="url(#orb-gradient)" fill="none" stroke-width="2" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">A little more about my journey and what drives me.</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="/templates/kalpeshpic.jpg" alt="A photo of Kalpesh Desale" class="profile-photo">
+                </div>
+                <div class="about-text">
+                    <p>I am a passionate and driven developer with a strong foundation in AI/ML, full-stack development, and backend systems. While I am at the beginning of my professional journey, I have dedicated myself to building a deep understanding of how to create intelligent, scalable, and user-centric applications. I specialize in machine learning, data analysis, and constructing robust backend architectures.</p>
+                    <p>My journey into technology is fueled by a curiosity for turning complex problems into elegant solutions. From developing predictive models with Python to building dynamic web applications, I enjoy every aspect of the development process. I am eager to apply my skills to real-world challenges and contribute to a forward-thinking team.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Key Technologies</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Ready to Learn</p>
+                        </div>
+                    </div>
+                    <div class="about-footer">
+                        <div class="about-interests">
+                            <h4>My Interests</h4>
+                            <div class="interest-icons">
+                                <i class="fas fa-book-reader" title="Reading"></i>
+                                <i class="fas fa-hiking" title="Hiking"></i>
+                                <i class="fas fa-chess" title="Chess"></i>
+                                <i class="fas fa-music" title="Music"></i>
+                            </div>
+                        </div>
+                        <a href="/templates/kalpesh_cv.pdf" download="Kalpesh_Desale_CV.pdf" class="btn btn-primary about-btn">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">A look at the primary technologies and tools I work with.</p>
+            <div class="skills-container">
+                <!-- AI & Data Science -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">AI & Data Science</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="skill-item"><i class="fas fa-brain"></i><span>TensorFlow</span></div>
+                        <div class="skill-item"><i class="fas fa-cogs"></i><span>Scikit-learn</span></div>
+                        <div class="skill-item"><i class="fas fa-table"></i><span>Pandas</span></div>
+                        <div class="skill-item"><i class="fas fa-calculator"></i><span>NumPy</span></div>
+                        <div class="skill-item"><i class="fas fa-robot"></i><span>NLP</span></div>
+                        <div class="skill-item"><i class="fab fa-keras"></i><span>Keras</span></div>
+                    </div>
+                </div>
+                <!-- Backend Development -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Backend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fab fa-python"></i><span>Django</span></div>
+                        <div class="skill-item"><i class="fas fa-wine-bottle"></i><span>Flask</span></div>
+                        <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+                        <div class="skill-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+                        <div class="skill-item"><i class="fas fa-server"></i><span>REST APIs</span></div>
+                        <div class="skill-item"><i class="fas fa-file-code"></i><span>FastAPI</span></div>
+                    </div>
+                </div>
+                <!-- Frontend Development -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Frontend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                        <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+                        <div class="skill-item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                        <div class="skill-item"><i class="fab fa-react"></i><span>React</span></div>
+                        <div class="skill-item"><i class="fab fa-bootstrap"></i><span>Bootstrap</span></div>
+                    </div>
+                </div>
+                <!-- Tools & Cloud -->
+                <div class="skill-group">
+                    <h3 class="skill-group-title">Tools & Cloud</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="skill-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+                        <div class="skill-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                        <div class="skill-item"><i class="fab fa-aws"></i><span>AWS</span></div>
+                        <div class="skill-item"><i class="fas fa-terminal"></i><span>CLI</span></div>
+                    </div>
+                </div>
+                <!-- Currently Learning -->
+                <div class="skill-group learning-group">
+                    <h3 class="skill-group-title">Currently Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fab fa-vuejs"></i><span>Vue.js</span></div>
+                        <div class="skill-item"><i class="fas fa-cogs"></i><span>Go (Golang)</span></div>
+                        <div class="skill-item"><i class="fas fa-cloud"></i><span>Kubernetes</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-new">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <!-- Project Filter Buttons -->
+            <div class="project-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="api">API</button>
+            </div>
+            <div class="projects-grid-new">
+                <!-- Project 1 -->
+                <div class="project-card-new"
+                    role="button" tabindex="0"
+                    data-category="ai" 
+                    data-title="Unified AI Chatbot"
+                    data-img="/templates/ragchatimg.jpg"
+                    data-description="This project is an advanced, context-aware chatbot built using modern NLP techniques and deep learning. It integrates multiple knowledge bases to provide seamless, accurate, and human-like user interactions. The backend is deployed on AWS for high availability and scalability, ensuring a responsive experience. Key features include intent recognition, entity extraction, and a dynamic response generation system.">
+                    <div class="project-card-new-image">
+                        <img src="/templates/ragchatimg.jpg" alt="Unified AI Chatbot Project Image" loading="lazy">
+                    </div>
+                    <div class="project-card-new-content">
+                        <h3 class="project-card-new-title">Unified AI Chatbot</h3>
+                        <p class="project-card-new-desc">Unified AI Chatbot A smart chatbot built using TensorFlow and NLP. It understands user messages, responds intelligently, and supports multiple features like intent detection, context handling, and voice/text interaction. Easy to customize and ready to deploy.</p>
+                        <div class="project-tech-new">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>NLP</span>
+                            <span>AWS</span>
+                            <span>Flask</span>
+                        </div>
+                        <div class="project-links-new">
+                            <a href="https://github.com/123kalpesh/Unified-AI-Chatbot" target="_blank" rel="noopener noreferrer" class="project-link-new">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" onclick="handleProjectClick('demo', 'Unified AI Chatbot'); return false;" class="project-link-new">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card-new"
+                    role="button" tabindex="0"
+                    data-category="fullstack"
+                    data-title="Sales & Inventory Dashboard"
+                    data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
+                    data-description="A comprehensive full-stack web application designed to provide real-time sales analytics and inventory management. It features a highly interactive dashboard with dynamic charts and graphs powered by D3.js. The robust backend is built with Django and connected to a PostgreSQL database, offering features like data filtering, export options, and user role management.">
+                    <div class="project-card-new-image">
+                        <img src="/templates/aidriven.webp" alt="Sales & Inventory Dashboard Project Image" loading="lazy">
+                    </div>
+                    <div class="project-card-new-content">
+                        <h3 class="project-card-new-title">AI-Driven-Radiology-Assistant</h3>
+                        <p class="project-card-new-desc">आरोग्यनिदानम् (Ārogyanidānam) is a full-stack AI-powered medical assistant and report generator that assists doctors and patients in diagnosing diseases, analyzing CT scan images, and creating structured reports with AI-driven recommendations. </p>
+                        <div class="project-tech-new">
+                            <span>Keras</span>
+                            <span>NLP</span>
+                            <span>RAG</span>
+                            <span>Django</span>
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="project-links-new">
+                            <a href="https://github.com/123kalpesh/AI-Driven-Radiology-Assistant" target="_blank" rel="noopener noreferrer" class="project-link-new">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" onclick="handleProjectClick('demo', 'AI-Driven-Radiology-Assistant'); return false;" class="project-link-new">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card-new"
+                    role="button" tabindex="0"
+                    data-category="api"
+                    data-title="E-commerce Platform API"
+                    data-img="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1200"
+                    data-description="This is a high-performance RESTful API designed to power a modern e-commerce platform. It includes secure user authentication with JWT, comprehensive product and category management, and a complete order processing workflow. Built with FastAPI for speed and efficiency, and containerized with Docker for easy deployment and scalability. The API is fully documented using OpenAPI (Swagger UI).">
+                    <div class="project-card-new-image">
+                        <img src="/templates/contact.jpg" alt="E-commerce Platform API Project Image" loading="lazy">
+                    </div>
+                    <div class="project-card-new-content">
+                        <h3 class="project-card-new-title">Contract-Based-Farming</h3>
+                        <p class="project-card-new-desc">AgriConnect: Smart Contract-Based Farming Platform AgriConnect is a Django-based backend and React-based frontend web application designed to streamline the farming contract process. It provides a decentralized platform where farmers and contractors can create, negotiate, and manage farming contracts efficiently and transparently using blockchain technology.</p>
+                        <div class="project-tech-new">
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>JWT</span>
+                            <span>React</span>
+                            <span>javascript</span>
+                            <span>FintuneAPI</span>
+                        </div>
+                        <div class="project-links-new">
+                            <a href="https://github.com/123kalpesh/Contract-Based-Farming" target="_blank" rel="noopener noreferrer" class="project-link-new">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="#" onclick="handleProjectClick('demo', 'Contract-Based-Farming'); return false;" class="project-link-new">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Awards</h2>
+            <p class="section-subtitle">Key milestones and recognitions in my journey.</p>
+            <div class="achievements-grid">
+                <!-- Achievement Card 1 -->
+                <div class="achievement-card" data-aos="fade-up">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Hackathon Winner - CodeFest at Raipur 2023</h3>
+                        <p class="achievement-date">National Level</p>
+                        <p class="achievement-description">Achieved first place in a 24-hour hackathon by developing an AI-powered solution for connecting farmers with companies.</p>
+                    </div>
+                </div>
+                <!-- Achievement Card 2 -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Top Performer Award Sports</h3>
+                        <p class="achievement-date">University Level</p>
+                        <p class="achievement-description">Represented my university in inter-university kabaddi tournaments, demonstrating teamwork, agility, and strategic play.</p>
+                    </div>
+                </div>
+                <!-- Achievement Card 3 -->
+                <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="achievement-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">Published Research Paper</h3>
+                        <p class="achievement-date">AI-Driven Radiology</p>
+                        <p class="achievement-description">Published a paper on using AI to reduce radiologists' workload and improve patient report turnaround via deep learning for image analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="internship">
+        <div class="container">
+            <h2 class="section-title">Internship Experience</h2>
+            <p class="section-subtitle">My professional experience and practical learning journey.</p>
+            <div class="internship-container">
+                <div class="internship-tabs">
+                    <button class="internship-tab-btn active" data-target="internship-1">Infosys Springboard</button>
+                    <!-- Add more tabs here for other internships -->
+                    <!-- <button class="internship-tab-btn" data-target="internship-2">Another Company</button> -->
+                </div>
+                <div class="internship-content-area">
+                    <!-- Internship 1 Content -->
+                    <div class="internship-content active" id="internship-1">
+                        <div class="internship-header">
+                            <h3 class="internship-title">AI/ML Intern <span class="internship-company">@ Infosys Springboard</span></h3>
+                            <p class="internship-date">June 2023 - August 2023</p>
+                        </div>
+                        <ul class="internship-description">
+                            <li>Designed and developed a robust AI-powered system for the BFSI sector that leverages Optical Character Recognition (OCR) to extract and analyze financial data from bank statements.</li>
+                            <li>Automated transaction categorization and financial summarization to reduce manual effort and improve data reliability.</li>
+                            <li>Enhanced data extraction accuracy by implementing advanced image preprocessing techniques and robust error handling mechanisms.</li>
+                            <li>Demonstrated scalable AI integration in real-world financial systems, providing a proof-of-concept for wider adoption.</li>
+                        </ul>
+                        <div class="internship-footer">
+                            <div class="internship-tech">
+                                <span>Python</span>
+                                <span>OpenCV</span>
+                                <span>Tesseract OCR</span>
+                                <span>Pandas</span>
+                                <span>Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add content for other internships here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-new">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have a project in mind or just want to say hello? I'd love to hear from you.</p>
+            <div class="contact-container-new">
+                <!-- Contact Form -->
+                <form class="contact-form-new" id="contactForm">
+                    <div id="form-messages" class="form-messages"></div>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder=" " required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Send Message</span>
+                    </button>
+                </form>
+
+                <!-- Contact Info -->
+                <div class="contact-info-new">
+                    <div class="contact-card-new">
+                        <div class="contact-card-new-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Me</h4>
+                        <p>kalpeshdesale570@gmail.com</p>
+                    </div>
+                    <div class="contact-card-new">
+                        <div class="contact-card-new-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Call Me</h4>
+                        <p>+91 9322175505</p>
+                    </div>
+                    <div class="contact-card-new">
+                        <div class="contact-card-new-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Location</h4>
+                        <p>Dhule, India</p>
+                    </div>
+                    <div class="social-links-new">
+                        <a href="https://github.com/123kalpesh" class="social-link" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kalpesh Desale. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Project Image">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-title"></h2>
+                    <div id="modal-tech" class="project-tech-new"></div>
+                    <h3>About this project</h3>
+                    <p id="modal-description"></p>
+                    <div id="modal-links" class="project-links-new">
+                        <!-- Links will be inserted here by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
